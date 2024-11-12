@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+div{
+    color: #EBEAE8;
+}
+body{
+    background: linear-gradient(to bottom, #00A6FB, #03326C);
+    height: 100%;
+}
+.conteiner{
+    margin: 0 auto;
+}
+.searcher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+.curLocation{
+    font-size: 7vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.curTemperature{
+    font-size: 20vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.search{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 4vh;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.search-button{
+    height: 5vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.curInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.curMaxMin{
+    display: flex;
+    gap: 5vh;
+}
+.curDescription{
+    font-size: 5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.tempCur{
+    font-size: 5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.restOfDay{
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 30px;
+    width: 65vw;
+    /* height: 65vh; */
+    padding: 3vh;
+}
+.restOfDay-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+.dayDescription{
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weekWeather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weekWeather-wrapper{
+    background-color: black;
+    opacity: 0.5;
+    width: 65vw;
+    border-radius: 30px;
+    padding: 3vh;
+}
+.weatherForWeek{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+}
+.dayTemperatures{
+    display: flex;
+    gap: 8vh;
+}
+.restOfDay-bottom {
+    padding: 10px;
+}
+
+.timeAndTemp {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeRow, .tempRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.hourTime, .hourTemp {
+    width: 40px;
+    text-align: center;
+}

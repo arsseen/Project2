@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="RecipeApp.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search-line">
+      <input type="text" id="searchRecept" class="poiskovik" oninput="showRecipeTitles()" placeholder="Search for recipes...">
+    </div>
+    
+    <div class="recipeList" id="recipeList"></div>
+    
+    <div class="favorites">
+      <h2>Your Favorites</h2>
+      <div id="favoritesList" class="favoritesList"></div>
+    </div>
+  </div>
+
+  <div id="recipe-modal" class="modal">
+    <div id="modal-content" class="modal-content">
+      <button id="close-modal" class="close">&times;</button>
+    </div>
+  </div>
+
+  <script src="RecipeApp.js"></script>
+</body>
+</html>
